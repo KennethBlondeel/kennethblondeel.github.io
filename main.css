@@ -7,7 +7,7 @@
 
 .p-home--background {
   height: 100vh;
-  background-image: url('http://134.122.95.37/assets/6ce933ee-d233-48eb-97c6-1172f522e3d9?cache-buster=2021-07-16T11:03:53Z&key=system-large-contain&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjBlNzNjYjVhLTY4NGYtNDE3Ny1iZTQ2LTJlMjhjMGJlZTgwNiIsImlhdCI6MTcyNzc4ODk0MiwiZXhwIjoxNzI3Nzg5ODQyfQ.ifUhLOvzsTD8POZcwaYE-0ffz97aNIR22C6e9AsEFVs');
+  background-image: url('./static/6ce933ee-d233-48eb-97c6-1172f522e3d9.jpeg');
   background-color: rgba(0, 0, 0, 0.384);
   background-size: cover;
   padding: 1.5em;
