@@ -1,0 +1,142 @@
+// Formulate inputs
+// -----------------------------------------------------------------------------
+
+.formulate-input {
+    width: 100%;
+    margin-bottom: 1em;
+    // global wrapper styles
+  
+    .formulate-input-label {
+      // global label styles
+    }
+  
+    .formulate-input-element {
+      // Global field-level wrapper styles
+      max-width: unset;
+
+      input,
+      textarea {
+        background-color: #fff;
+        width: 100%;
+        border: rgb(194, 209, 194) 1px solid;
+        border-radius: 3px;
+      }
+}
+  
+    .formulate-input-help {
+      // Global help text styles
+    }
+  
+    .formulate-input-errors {
+      // Global error message list wrapper
+      margin: 0em;
+    }
+  
+    .formulate-input-error,
+    .formulate-file-upload-error {
+      margin-bottom: 0em;
+    }
+  
+    .formulate-input-group-item {
+      // Group of items (like list of checkboxes) wrapper
+    }
+  
+    // Text inputs
+    // -----------------------------------------------------------------------------
+  
+    &[data-classification='text'] {
+      input {
+        // Style all text-like input elements
+        height: 30px;
+      }
+    }
+  
+    // Slider inputs
+    // -----------------------------------------------------------------------------
+  
+    &[data-classification='slider'] {
+      input {
+        // Style range inputs
+      }
+    }
+  
+    // Textarea inputs
+    // -----------------------------------------------------------------------------
+  
+    &[data-classification='textarea'] {
+      textarea {
+        height: 70px;
+      }
+    }
+  
+    // Button inputs
+    // -----------------------------------------------------------------------------
+  
+    &[data-classification='button'] {
+      button {
+        width: 130px;
+        height: 30px;
+        background-color: rgb(194, 209, 194);
+        border: none;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  
+    // Select lists
+    // -----------------------------------------------------------------------------
+  
+    &[data-classification='select'] {
+      select {
+        // Style select lists
+      }
+    }
+  
+    // Box inputs
+    // -----------------------------------------------------------------------------
+  
+    &[data-classification='box'] {
+      .formulate-input-element {
+        // Box input (checkbox and radio) wrapper (might want flex here)
+        input {
+          // Style box element itself
+        }
+      }
+    }
+  
+    // File inputs
+    // -----------------------------------------------------------------------------
+  
+    &[data-classification='file'] {
+      background-color: #fff;
+      .formulate-input-upload-area {
+        input {
+          // The actual upload element
+        }
+      }
+    }
+  
+    // Image uploads
+    // -----------------------------------------------------------------------------
+  
+    [data-type='image'] {
+      // image uploads
+    }
+  }
+  
+  // Form-level errors
+  // -----------------------------------------------------------------------------
+  
+  .formulate-form-errors {
+    .formulate-form-error {
+      // form errors (not specific to a field)
+    }
+  }
+
+  @media (max-width: 1350px){
+    .formulate-input{
+      padding: 0.5em 0;
+    }
+  }
